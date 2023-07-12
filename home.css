@@ -1,0 +1,95 @@
+/* CSS RESET  */
+
+*{
+    margin: 0px 0px;
+}
+#home{
+    margin-top: 50px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2073px;
+    z-index: -1;
+    background: url(home/bg.jpeg) center center/cover;
+    top: 0%;
+    opacity: 0.6;
+}
+.tut{
+    display: flex;
+}
+.tut img{
+    height: 270px;
+    width: 300px;
+    margin: 10px 30px;
+    border: 2px solid black;
+
+    border-radius: 10px;
+}
+.tut p{
+    margin: 40px 100px;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.le{
+    text-align: left;
+}
+.ri{
+    text-align: right;
+}
+/* UTILITY CLASSES */
+
+.center{
+    text-align: center;
+}
+.primary{
+    font-size: 3.8rem;
+    padding: 12px 20px;
+}
+.secondary{
+    font-size: 2.6rem;
+    padding: 12px 460px;
+    margin-top: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-shadow: 4px 4px  rgb(163, 168, 175);
+    text-decoration: underline;
+}
+.le{
+    padding: 5px 45px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    margin: 0px 460px;
+    margin-top: 40px;
+    background-color: rgb(132, 207, 209);
+    opacity: 10;
+}
+.le:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.ri{
+    padding: 5px 45px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    margin-left: 850px;
+    margin-top: 40px;
+    background-color: rgb(132, 207, 209);
+    opacity: 10;
+}
+.ri:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}

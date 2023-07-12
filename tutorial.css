@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap');
+
+*{
+    margin: 0px 0px;
+}
+
+#btn2 {
+    position: fixed;
+    margin-left: 1400px;
+    margin-top: 10px;
+    border-radius: 19px;
+    font-size: 2.2rem;
+    border-radius: 80px;
+}
+#btn2 img{
+    height: 50px;
+    padding: 7px;
+}
+.navbar{
+    position: fixed;
+    width: 1920px;
+    background-color: rgb(11, 5, 119);
+}
+.navbar ul{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    /* font-size: 1.2rem; */
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0px 50px;
+    color: rgb(187, 187, 17);
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar ul li a:hover{
+    font-weight: bold;
+    color: yellow;
+}
+.btn {
+    margin-left: 700px;
+    height: 30px;
+    width: 133px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+
+
+main{
+    margin-top: 60px;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(202, 203, 235);
+}
+.sec1{
+    margin: 0px 20px;
+}
+
+.sec1 img{
+    height: 500px;
+    width: 191vh;
+    margin: 30px 15px;
+    border: 2px solid black;
+}
+.sec1 h1{
+    font-size: 5.4rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 30px 0px;
+}
+.sec1 h3{
+    font-size: 2.8rem;
+    padding: 10px 15px;
+}
+.sec1 p{
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    padding: 5px 40px;
+}
+.sec1 dd{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    padding: 5px 65px;
+}
+.sec1 dt{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.9rem;
+    padding: 5px 45px;
+}
+
+.sec1 ul li{
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8rem;
+}
+
+.sec1 span{
+    font-size: 1.7rem;
+    font-family: 'Rubik', sans-serif;
+    padding: 30px 20px;
+}
+.points{
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    padding: 30px 35px;
+}
+.points1{
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    padding: 30px 35px;
+}
+.fix{
+    margin-bottom: 30px;
+}
+#table{
+    height: 800px;
+}
+.content ul li{
+    padding: 7px 30px;
+    font-size: 2.2rem;
+    margin-left: 30px;
+}
+#heading{
+    text-decoration: underline;
+}
+.fix2{
+    margin-top: 30px;
+}
+#head{
+    text-decoration: underline;
+}
+#heading2{
+    text-decoration: underline;
+}
+#heading3{
+    text-decoration: underline;
+}
+#heading4{
+    text-decoration: underline;
+}
+#heading5{
+    text-decoration: underline;
+}
+#heading6{
+    text-decoration: underline;
+}
+#heading7{
+    text-decoration: underline;
+}

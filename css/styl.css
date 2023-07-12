@@ -1,0 +1,126 @@
+#top h1,#top h2 {
+    color:white;
+    
+}
+
+header h1{
+    margin-left: 250 px;
+    letter-spacing : 0.1em;
+    
+    
+
+}
+
+
+#top{
+    margin-left:250px;
+}
+
+ header h1 .hello{
+    color:skyblue;
+}
+
+header h2 .hello{
+    color:skyblue; 
+} 
+#paragraph h1 .hello{
+  color : #0069ffab;
+}
+
+header
+{background: #1d1d1d url('../img/tree.jpg') repeat;
+ border-bottom: 2px; 
+ height: 177px;
+ width: 100%;  
+}
+
+
+.center
+
+{ 
+  margin-left : 250px;
+  margin-right : 250px;
+  margin-bottom: 5px;
+  margin-top:10px;
+  height: 180px;
+  width: calc(100vw - 500px);
+  border: 2px solid  skyblue;
+  
+ 
+  
+}
+
+#paragraph{
+ margin: auto 250px;
+}
+
+.button {
+  color: white;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;}
+
+.button1:hover {
+  background-color: #555555;
+  color: white;
+}
+.stock, .coin_long, .coin_short{
+    font-size : 0;
+    border : 2px solid black; 
+    
+}
+
+.card1  {
+    
+    
+    display:inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size : 18px;
+}
+
+  .card2  {
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+   
+    display:inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size : 18px;
+  }
+  
+  /* .card1:hover, .card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  } */
+  
+  .container1, .container2 {
+    padding: 2px 16px;
+  }
+
+
+  
+#copy1 , #copy2{
+  
+  color: white;
+
+}
+
+
+footer{
+  margin-top : 30px;
+  background : url('../img/footer2.jpg') repeat;
+  height:100px;
+  width : 100%;
+  padding-top : 40px;
+  text-align : center;
+}
+

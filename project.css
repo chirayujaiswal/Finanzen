@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables  */
+:root{
+    --navbar-height: 59px
+}
+
+
+
+
+/* Navigation bar  */
+
+
+#navbar{
+   display: flex; 
+   position: relative;
+   align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(2, 3, 4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/*Navigation bar  Logo and image */
+#logo{
+    margin: 0px 1px;
+}
+#logo img{
+    margin: 10px 40px;
+    height: 120px;
+    border: 2px;
+    border-radius: 80px; 
+}
+/* Navigation bar List styling  */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2',;
+}
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 4px 22px ;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: rgb(39, 2, 2);
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+#logIn button{
+    margin: 10px 10px;
+}
+
+
+
+
+/* Home section  */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 638px;
+}
+
+#home::before{
+    content: "";
+    background:url(home/Home.jpg) no-repeat center center/cover;
+    top: 0;
+    position: absolute;
+    height: 104%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.59;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+#btn2 {
+    position: fixed;
+    margin-left: 1400px;
+    margin-top: 30px;
+    border-radius: 19px;
+    font-size: 2.2rem;
+    background-color: white;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+#btn2 img{
+    height: 50px;
+    padding: 7px;
+}
+
+
+
+/* tutorial section  */
+
+
+#tut{
+    margin: 0px 0px;
+    display: flex;
+}
+#tut .box{
+    border: 5px solid rgb(11, 5, 119);
+    padding: 30px 30px;
+    margin: 40px 45px;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+}
+#tut .box img{
+    height: 160px;
+    width: 190px;
+    display: block;
+    margin-top: 10px;
+    margin: auto;
+    box-shadow:12px 13px 10px black ;
+}
+#tut .box p{
+    font-family: 'Bree Serif', serif;
+    padding: 10px 5px;
+}
+
+
+/* About us section */
+
+#aboutus::before{
+    content: "";
+    position: absolute;
+    background: url(home/aboutus.webp) center center/cover;
+    width: 100%;
+    height: 789px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#abt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#abt img{
+    margin: 54px 90px;
+    height: 300px;
+    width: 500px;
+    border: 3.4px solid black;
+    border-radius: 5px;
+}
+#aboutus p{
+    font-size: 1.7rem;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Baloo Bhai 2', 'cursive';
+}
+
+/* Contact Section  */
+
+#contact{
+    position: relative;
+}
+#contact h1{
+    margin-left: 280px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:url(home/contact.jpg) center center/cover;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 200px;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    font-size: 1.1rem;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Footer  */
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2px 3px;
+}
+
+
+/* Utility Classes  */
+
+
+.primary{
+    font-size: 3.8rem;
+    padding: 12px 20px;
+    font-family: 'Bree Serif', serif;
+}
+.secondary{
+    font-size: 2.2rem;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-shadow: 4px 4px  rgb(163, 168, 175);
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 5px 45px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhai 2', 'cursive';
+    font-size: 1.2rem;
+    margin: 0px 30px;
+    margin-top: 70px;
+    background-color: rgb(132, 207, 209);
+    opacity: 10;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.btn a {
+    text-decoration: none;
+}
+.btn1{
+    padding: 5px 45px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+    margin: 0px 230px;
+    margin-top: 40px;
+    background-color: rgb(132, 207, 209);
+    opacity: 10;
+}
+.btn1:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}

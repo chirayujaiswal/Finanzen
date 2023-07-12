@@ -1,0 +1,71 @@
+*{
+    margin: 0px 0px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 753px;
+    z-index: -1;
+    background: url(login/login.jpg) center center/cover;
+    top: 0%;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+}
+#contact-box form{
+    width: 60%;
+}
+#contact-box input{
+    width: 100%;
+    margin: 10px 0px;
+    margin: 10px 0px;
+    padding: 0.6rem;
+    border-radius: 19px;
+    font-size: 1.1rem;
+    font-size: 1.1rem;
+}
+#contact-box label{
+    font-size: 2.0rem;
+    font-family: 'Bree Serif', serif;
+    color: darkkhaki;
+}
+
+/* utility classes  */
+
+
+.primary{
+    margin: 82px 50px;
+    margin-bottom: 90px;
+    font-size: 3.8rem;
+    padding: 20px 20px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(130, 141, 25);
+}
+.center{
+    text-align: center;
+}
+.formgroup{
+    padding: 7px;
+}
+.btn1{
+    padding: 5px 45px;
+    border-radius: 39px;
+    border: 2px solid black;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    margin: 0px 360px;
+    margin-top: 60px;
+    background-color: rgb(132, 207, 209);
+    opacity: 10;
+    width: 200px;
+}
+.btn1:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.btn1 a{
+    text-decoration: none;
+}

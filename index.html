@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   <!--meta code는 화면밖에는 표현되지 않지만 검색엔진 입장에서 유용하게 사용될 때가 많음  -->
+    <meta name = "description" content = "Target Price and Stop Loss" /> <!-- 웹사이트의 전체적인 설명. 검색엔진에 이용될 수 있음 -->
+    <meta name = "keywords" content = "Stock ,Coin, Target Price, Stop Loss, SL"/> <!--이 웹페이지를 대표하는 중요한 단어들. 엔진이 웹사이트를 분류할 때 사용되기도 함  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" type = "text/css" href = "css/styl.css"/>
+    <script src = "js/my.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div id = "top">
+        <h1 style = "margin-top : 0;">I<span class = 'hello'>M</span></h1>
+        <h2>Investment <span class = 'hello'>Management</span></h2>
+        
+        </div>
+    </header>
+    
+    <section id ="banner">
+    <div id  = "site_content">
+        <img  src = "img/banner.jpg"  class = "center">  
+    </div>
+    </section>
+    
+    <section id = "paragraph">
+        <main>
+            <h1>Welcome to the I<span class = "hello">M</span></h1>
+            <p>Our platform <strong>IM</strong> stands for Investment Management. It is very important to manage the risk and calculate your profit in terms of all investments. We are here to help you with these asset management.</p>
+            <p>Remember! <strong>ALWAYS</strong> use split buying and selling strategy and put <strong>stop loss</strong> to minimize your risk and maximize your profits in investment. 
+               Also make sure that you have your own standard of risk to reward ratio strategy.</p>
+            <p>After you type in your purchase and selling price, we provide you with essential data such as risk/reward ratio, specific rate of return, etc. Then you can decide whether to enter this position or not based on this data</p>
+            <br><br>
+            <h2>Asset management</h2>
+            
+        </main>
+        <p style ="font-style : italic ; "><b><span style = "color : #0000ffb5">Manage</span> your stock buying plan here</b></p>
+        <div class = "stock">
+        <div class="card1" >
+            <div class="container1">
+              <h4><b>Stock</b></h4>
+              <h5>Calculate your risk</h5>
+            <div class = "Question1">
+                how many times do you want to buy on scale? 
+                  <input type = "number" style = "height : 20px ; width: 50px; " class = "scale-count" /> 
+                
+                <button type = "button"  onclick = "handleNextButtonClick('Question1')" style = "padding : 4px 19px;">
+                Next
+                </button>
+                
+                <div class = "form-output"> </div>
+                <br>
+                <button class = "button button1" onclick = "handleCalculateAverageButtonClick('Question1')">
+                CalculateAverage
+                </button> &nbsp; : 
+                 &nbsp; <span class= "average1"></span>
+                 <br>
+                 Type in your Stop Loss(%)
+                    <input type = "number" style = "height : 20px; width : 50px;" class = "sl"/>
+                    <br>
+                    <button class = "button button1" onclick = "stopLoss('Question1')">SL Price </button>&nbsp :
+                    <span class = "s"></span>
+              </div>
+          </div>
+        </div>
+        
+        <div class="card2">
+            <div class="container2">
+              <br><br>
+              <h5>Target Price</h5> 
+              <div class = "Question1_1">
+                  How many times do you want to sell on scale?
+                  <input type = "number" style ="height : 20px; width: 50px;" class = "scale-count" />
+                  <button type = "button" onclick = "handleNextButtonClick('Question1_1')" style = "padding:4px 19px;">
+                    Next
+                  </button>
+                  <div class = "form-output"></div>
+                  <br>
+                  <button class = "button button1" onclick = "handleCalculateAverageButtonClick('Question1_1')">
+                    CalculateAverage
+                    </button> &nbsp; :
+                    &nbsp; <span class = "average1"></span>
+                    <br>
+                  <button class = "button button1" onclick = "rateOfReturn('Question1','Question1_1')">
+                   Rate of Return</button> &nbsp : 
+                    <span class = "ress"></span>
+                   <br>
+                    <button class = "button button1" onclick = "riskToReward('Question1','Question1_1')">
+                    Risk/Reward ratio</button> &nbsp =
+                     <span class = "rr"></span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        
+        <br><br>
+        <p style="font-style : italic"><b><span style = "color :#0000ffb5">Manage</span> your coin trading plan here</b></p>
+        <div class = "coin_long">
+          <div class="card1" >
+              <div class="container1">
+                <h4><b>Coin_Long</b></h4>
+                <h5>Calculate your risk</h5>
+              <div class = "Question2">
+                  What is your leverage?(type number) 
+                  <input type = "number" style = "height : 20px; width : 50px;" class = "llev" />
+                  <br>
+                  how many times do you want to buy on scale? 
+                    <input type = "number" style = "height : 20px ; width: 50px; " class = "scale-count" /> 
+                  
+                  <button type = "button"  onclick = "handleNextButtonClick('Question2')" style = "padding : 4px 19px;">
+                  Next
+                  </button>
+                  
+                  <div class = "form-output"> </div>
+                  <br>
+                  <button class = "button button1" onclick = "handleCalculateAverageButtonClick('Question2')">
+                  CalculateAverage
+                  </button> &nbsp; : 
+                   &nbsp; <span class= "average1"></span>
+                   <br>
+                   Type in your Stop Loss(%)
+                      <input type = "number" style = "height : 20px; width : 50px;" class = "sl"/>
+                      <br>
+                      <button class = "button button1" onclick = "stopLoss2('Question2')"> SL Price </button>&nbsp :
+                      <span class = "s"></span>
+                </div>
+            </div>
+          </div>
+          
+          <div class="card2">
+              <div class="container2">
+                <br><br>
+                <h5>Target Price</h5> 
+                <div class = "Question2_2">
+                    How many times do you want to sell on scale?
+                    <input type = "number" style ="height : 20px; width: 50px;" class = "scale-count" />
+                    <button type = "button" onclick = "handleNextButtonClick('Question2_2')" style = "padding:4px 19px;">
+                      Next
+                    </button>
+                    <div class = "form-output"></div>
+                    <br>
+                    <button class = "button button1" onclick = "handleCalculateAverageButtonClick('Question2_2')">
+                      CalculateAverage
+                      </button> &nbsp; :
+                      &nbsp; <span class = "average1"></span>
+                      <br>
+                    <button class = "button button1" onclick = "rateOfReturn2('Question2','Question2_2')">
+                     Rate of Return</button> &nbsp : 
+                      <span class = "ress"></span>
+                     <br>
+                      <button class = "button button1" onclick = "riskToReward2('Question2','Question2_2')">
+                      Risk/Reward ratio</button> &nbsp = &nbsp
+                       <span class = "rr"></span>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class = "coin_short">
+            <div class="card1" >
+                <div class="container1">
+            
+                  <h4><b>Coin_Short</b></h4>
+                  <h5>Calculate your risk</h5>
+                <div class = "Question3">
+                    What is your leverage?(type number) 
+                    <input type = "number" style = "height : 20px; width : 50px;" class = "llev" />
+                    <br>
+                    how many times are you going to short sell on scale? 
+                      <input type = "number" style = "height : 20px ; width: 50px; " class = "scale-count" /> 
+                    
+                    <button type = "button"  onclick = "handleNextButtonClick('Question3')" style = "padding : 4px 19px;">
+                    Next
+                    </button>
+                    
+                    <div class = "form-output"> </div>
+                    <br>
+                    <button class = "button button1" onclick = "handleCalculateAverageButtonClick('Question3')">
+                    CalculateAverage
+                    </button> &nbsp; : 
+                     &nbsp; <span class= "average1"></span>
+                     <br>
+                     Type in your Stop Loss(%)
+                        <input type = "number" style = "height : 20px; width : 50px;" class = "sl"/>
+                        <br>
+                        <button class = "button button1" onclick = "stopLoss3('Question3')"> SL Price </button>&nbsp :
+                        <span class = "s"></span>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card2">
+                <div class="container2">
+                  <br><br>
+                  <h5>Target Price</h5> 
+                  <div class = "Question3_3">
+                      How many times are you giong to buy to cover?
+                      <input type = "number" style ="height : 20px; width: 50px;" class = "scale-count" />
+                      <button type = "button" onclick = "handleNextButtonClick('Question3_3')" style = "padding:4px 19px;">
+                        Next
+                      </button>
+                      <div class = "form-output"></div>
+                      <br>
+                      <button class = "button button1" onclick = "handleCalculateAverageButtonClick('Question3_3')">
+                        CalculateAverage
+                        </button> &nbsp; :
+                        &nbsp; <span class = "average1"></span>
+                        <br>
+                      <button class = "button button1" onclick = "rateOfReturn3('Question3','Question3_3')">
+                       Rate of Return</button> &nbsp : 
+                        <span class = "ress"></span>
+                       <br>
+                        <button class = "button button1" onclick = "riskToReward3('Question3','Question3_3')">
+                        Risk/Reward ratio</button> &nbsp = 
+                         <span class = "rr"></span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        
+        
+
+        
+            </section>
+</body>
+
+<footer >
+  
+  <span id="copy1">&copy;2020  Nate </span>
+  <br>  <span id="copy2">WWW.Finanzen.com </span>
+
+</footer>
+        
+        
+        
+        
+
+                
+                
+              
+               
+    
+
+    
+    
+    
+    
+
+
+    
+</body>
+</html>
